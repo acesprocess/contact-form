@@ -12,22 +12,22 @@
         <h2>Bizimle İletişime Geçin</h2>
         <form id="my-form" action="https://formspree.io/f/xkovgdkv" method="POST">
             <div class="input-group">
-                <label for="name">Ad Soyad</label>
-                <input type="text" name="name" id="name" required placeholder="Adınızı yazınız...">
-            </div>
+        <label for="name" data-lang="label_name">Ad Soyad</label>
+        <input type="text" name="name" id="name" required data-lang-placeholder="place_name" placeholder="Adınızı yazınız...">
+    </div>
 
-            <div class="input-group">
-                <label for="email">E-posta Adresi</label>
-                <input type="email" name="email" id="email" required placeholder="örnek@mail.com">
-            </div>
+    <div class="input-group">
+        <label for="email" data-lang="label_email">E-posta Adresi</label>
+        <input type="email" name="email" id="email" required data-lang-placeholder="place_email" placeholder="örnek@mail.com">
+    </div>
 
-            <div class="input-group">
-                <label for="message">Mesajınız</label>
-                <textarea name="message" id="message" rows="5" required placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
-            </div>
+    <div class="input-group">
+        <label for="message" data-lang="label_message">Mesajınız</label>
+        <textarea name="message" id="message" rows="5" required data-lang-placeholder="place_message" placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
+    </div>
 
-            <button type="submit" id="submit-btn">Gönder</button>
-            <p id="status"></p>
+    <button type="submit" id="submit-btn" data-lang="btn_send">Gönder</button>
+    <p id="status"></p>
         </form>
     </div>
 
