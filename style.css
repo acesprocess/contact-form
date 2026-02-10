@@ -88,3 +88,17 @@ button:hover {
     background-color: #007bff;
     color: white;
 }
+
+#lang-btn {
+    background-color: #007bff; /* Mavi arka plan */
+    color: white;              /* Beyaz yazı */
+    padding: 8px 20px;         /* Biraz daha büyük boyut */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#lang-btn:hover {
+    background-color: #0056b3; /* Üzerine gelince koyulaşır */
+}
