@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contact-container">
+        <h2>Bizimle İletişime Geçin</h2>
+        <form id="my-form" action="https://formspree.io/f/YOUR_ENDPOINT" method="POST">
+            <div class="input-group">
+                <label for="name">Ad Soyad</label>
+                <input type="text" name="name" id="name" required placeholder="Adınızı yazınız...">
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-posta Adresi</label>
+                <input type="email" name="email" id="email" required placeholder="örnek@mail.com">
+            </div>
+
+            <div class="input-group">
+                <label for="message">Mesajınız</label>
+                <textarea name="message" id="message" rows="5" required placeholder="Size nasıl yardımcı olabiliriz?"></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn">Gönder</button>
+            <p id="status"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
