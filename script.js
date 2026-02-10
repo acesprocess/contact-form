@@ -37,8 +37,9 @@ form.addEventListener("submit", handleSubmit);
 // Dil Verileri (Sözlük)
 const translations = {
     tr: {
-        header: "Bizimle İletişime Geçin",
+        
         label_name: "Ad Soyad",
+        content_one: "Bizimle İletişime Geçin",
         place_name: "Adınızı yazınız...",
         label_email: "E-posta Adresi",
         place_email: "örnek@mail.com",
@@ -48,8 +49,9 @@ const translations = {
         btn_lang: "English" // Butonun üzerinde yazacak metin
     },
     en: {
-        header: "Contact Us",
+        
         label_name: "Full Name",
+        content_one: "Contact US",
         place_name: "Enter your name...",
         label_email: "Email Address",
         place_email: "example@mail.com",
@@ -84,4 +86,6 @@ function toggleLanguage() {
 
     // Butonun kendi metnini de güncelle
     document.getElementById("lang-btn").innerText = translations[currentLang]["btn_lang"];
+
+    
 }

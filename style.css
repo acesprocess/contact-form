@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .contact-container {
-    background: #ffffff;
+    background: #000000;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -102,3 +102,99 @@ button:hover {
 #lang-btn:hover {
     background-color: #0056b3; /* Üzerine gelince koyulaşır */
 }
+
+/* Genel Ayarlar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Tasarımı */
+.main-header {
+    background: #ffffff;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #007bff; /* Formdaki maviyle uyumlu */
+    letter-spacing: 0.5px;
+}
+
+#lang-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#lang-btn:hover {
+    background: #0056b3;
+}
+
+/* Formun Ortalanması ve Responsive Olması */
+.content-wrapper {
+    margin-top: 100px; /* Header'ın altında kalmaması için */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.contact-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 450px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Mobilde Daha İyi Görünüm */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 25px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+}
+
